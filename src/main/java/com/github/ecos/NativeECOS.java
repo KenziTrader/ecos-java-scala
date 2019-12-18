@@ -20,7 +20,7 @@ import org.jblas.util.LibraryLoader;
 
 public class NativeECOS {
 	/* Load the libecos.so / libecos.jnilib library and test some basic functionality */
-	static void loadLibraryAndCheckErrors() {
+	public static void loadLibraryAndCheckErrors() {
 		try {
 			System.loadLibrary("ecos");
 		} catch (UnsatisfiedLinkError e)  {
